@@ -62,7 +62,6 @@ const cards = [
         title: document.querySelector('#card3 .card-title'),
         text: document.querySelector('#card3 .card-text'),
         img: document.querySelector('#card3 .card-img-top'),
-        cardNumber: $('#card3'),
         currRecipe: 2
     }
 ]
@@ -87,27 +86,27 @@ fillCards()
 const btnCardsRight = document.querySelector('#btn-cards-right');
 const btnCardsLeft = document.querySelector('#btn-cards-left');
 
-btnCardsLeft.addEventListener('click', function() {
-    cards.forEach(function(card) {
-        if (card.currRecipe === 0) {
-            card.currRecipe = recipes.length - 1;
-        } else {
-            card.currRecipe--;   
-        }
-        fillCard(card); 
-    })
-})
+// btnCardsLeft.addEventListener('click', function() {
+//     cards.forEach(function(card) {
+//         if (card.currRecipe === 0) {
+//             card.currRecipe = recipes.length - 1;
+//         } else {
+//             card.currRecipe--;   
+//         }
+//         fillCard(card); 
+//     })
+// })
 
-btnCardsRight.addEventListener('click', function() {
-    cards.forEach(function(card) {
-        if (card.currRecipe === recipes.length - 1) {
-            card.currRecipe = 0;
-        } else {
-            card.currRecipe++;   
-        }
-        fillCard(card); 
-    })
-})
+// btnCardsRight.addEventListener('click', function() {
+//     cards.forEach(function(card) {
+//         if (card.currRecipe === recipes.length - 1) {
+//             card.currRecipe = 0;
+//         } else {
+//             card.currRecipe++;   
+//         }
+//         fillCard(card); 
+//     })
+// })
 
 
 // Link mode 
@@ -116,4 +115,73 @@ $('.card-gallery').click((event) => {
     let cardName = $(event.target).parent().attr('name')
     let recipeIndex = cards[cardName].currRecipe;
     $('#recipe').load(recipes[recipeIndex].link)
+})
+
+
+// Gallery version w/ Scrolling Effect:
+
+$('#btn-cards-right').click(() => {
+    cards.forEach(function(card) {
+        if (card.currRecipe === recipes.length - 1) {
+            card.currRecipe = 0;
+        } else {
+            card.currRecipe++;   
+        }
+    })
+    $('#card3').css({
+        animation: "card1 0.5s"
+    })
+    setTimeout(() => {
+        fillCard(cards[2])
+    }, 125)
+    $('#card2').css({
+        animation: "card2 0.5s"
+    })
+    setTimeout(() => {
+        fillCard(cards[1])
+    }, 250)
+    $('#card1').css({
+        animation: "card3 0.5s"
+    })
+    setTimeout(() => {
+        fillCard(cards[0])
+    }, 375)
+    setTimeout(() => {
+        $('.card-gallery').css({
+            animation: ""
+        })    
+    }, 500)
+})
+
+$('#btn-cards-left').click(() => {
+    cards.forEach(function(card) {
+        if (card.currRecipe === 0) {
+            card.currRecipe = recipes.length - 1;
+        } else {
+            card.currRecipe--;   
+        }
+    })
+    $('#card1').css({
+        animation: "card1 0.5s"
+    })
+    setTimeout(() => {
+        fillCard(cards[0])
+    }, 125)
+    $('#card2').css({
+        animation: "card2 0.5s"
+    })
+    setTimeout(() => {
+        fillCard(cards[1])
+    }, 250)
+    $('#card3').css({
+        animation: "card3 0.5s"
+    })
+    setTimeout(() => {
+        fillCard(cards[2])
+    }, 375)
+    setTimeout(() => {
+        $('.card-gallery').css({
+            animation: ""
+        })    
+    }, 500)
 })

@@ -23,10 +23,11 @@ body {
 
 /* Cards */
 
+
 .card {
     width: 20rem;
     height: 25rem;
-    margin: 2rem;
+    margin: 1rem;
     padding: 0;
 }
 
@@ -41,6 +42,43 @@ body {
     height: 70%;
 }
 
+/* Gallery Animation */
+
+@keyframes card1 {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
+
+@keyframes card2 {
+    25% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    75% {
+        transform: scale(1);
+    }
+}
+
+@keyframes card3 {
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 /* Recipes */
 

@@ -1,27 +1,38 @@
+$(document).ready(() => {
+    $('#recipe').load('penne-arrabiata.html');
+})
+
+
+
+
 // Recipe Objects
 const recipes = [
     {
         title: 'Penne all\'Arrabiata',
         text: 'Hot and tasty. A classic',
-        img: 'img/arrabiata-card.jpg'
+        img: 'img/arrabiata-card.jpg',
+        link: 'penne-arrabiata.html'
     },
 
     {
         title: 'Penne Gorgonzola',
         text: 'Cheese and Spinach. Delightful',
-        img: 'img/penne-gorgonzola-card.jpg'
+        img: 'img/penne-gorgonzola-card.jpg',
+        link: 'penne-gorgonzola.html'
     },
 
     {
         title: 'Spaghetti Carbonara',
         text: 'Eggcelent.',
-        img: 'img/carbonara.jpg'
+        img: 'img/carbonara.jpg',
+        link: 'spag-carbonara.html'
     },
 
     {
         title: 'Spaghetti Bolognese',
         text: 'Even better in the vegan version',
-        img: 'img/bolognese.jpg'
+        img: 'img/bolognese.jpg',
+        link: 'spag-bolognese.html'
     },
 
     {
@@ -51,6 +62,7 @@ const cards = [
         title: document.querySelector('#card3 .card-title'),
         text: document.querySelector('#card3 .card-text'),
         img: document.querySelector('#card3 .card-img-top'),
+        cardNumber: $('#card3'),
         currRecipe: 2
     }
 ]
@@ -59,6 +71,7 @@ const fillCard = (card) => {
     card.title.innerText = recipes[card.currRecipe].title;
     card.text.innerText = recipes[card.currRecipe].text;
     card.img.src = recipes[card.currRecipe].img;
+    $(card.cardNumber).attr('href', recipes[card.currRecipe].link)
 }
 
 const fillCards = () => {
@@ -97,5 +110,10 @@ btnCardsRight.addEventListener('click', function() {
 })
 
 
-// Array with recipe objects. 
-// Card objects in the DOM
+// Link mode 
+
+$('.card-gallery').click((event) => {
+    let cardName = $(event.target).parent().attr('name')
+    let recipeIndex = cards[cardName].currRecipe;
+    $('#recipe').load(recipes[recipeIndex].link)
+})

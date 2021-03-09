@@ -7,6 +7,10 @@
     <!-- LInk to Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
+    <!-- Link to Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Cairo&family=Josefin+Sans&display=swap" rel="stylesheet"> 
+
     <!-- Link to own CSS -->
     <link rel="stylesheet" href="style.css">
     <title>Pasta La Vista</title>
@@ -24,13 +28,15 @@
     </header>
     <!-- Main Section -->
     <main>
-        <h1 class="text-center">Pasta</h1>
-        <div class="container">
+            <div class="container">
             <div class="row justify-content-center align-items-center">
-                <button id="btn-cards-left" class="btn btn-dark col-1">Next Cards</button>
+                <div id="btn-cards-left" class="btn-gallery col-1"><i class="fas fa-caret-left fa-5x"></i></div>
                 <div class="card-container row col-7 justify-content-center">
                     <div id="card1" name="0" class="card col-3 card-gallery">
                         <img class="card-img-top" src="" alt="Penne all'arrabiata">
+                        <div class="star-background"></div>
+                        <i class="far fa-star star-no-fill fa-2x"></i>
+                        <i class="fas fa-star star-fill fa-2x"></i>
                         <div class="card-body">
                             <h5 class="card-title"></h5>
                             <p class="card-text"></p>
@@ -38,6 +44,9 @@
                     </div>
                     <div id="card2" name="1" class="card col-3 card-gallery">
                         <img class="card-img-top" src="" alt="Penne all'arrabiata">
+                        <div class="star-background"></div>
+                        <i class="far fa-star star-no-fill fa-2x"></i>
+                        <i class="fas fa-star star-fill fa-2x"></i>
                         <div class="card-body">
                             <h5 class="card-title"></h5>
                             <p class="card-text"></p>
@@ -45,13 +54,16 @@
                     </div>
                     <div id="card3" name="2" class="card col-3 card-gallery">
                         <img class="card-img-top" src="" alt="Penne all'arrabiata">
+                        <div class="star-background"></div>
+                        <i class="far fa-star star-no-fill fa-2x"></i>
+                        <i class="fas fa-star star-fill fa-2x"></i>
                         <div class="card-body">
                             <h5 class="card-title"></h5>
                             <p class="card-text"></p>
                         </div>
                     </div>
                 </div>
-                <button id="btn-cards-right" class="btn btn-dark col-1">Next Cards</button>
+                <div id="btn-cards-right" class="btn-gallery col-1"><i class="fas fa-caret-right fa-5x"></i></div>
             </div>
         </div>
         </div>
@@ -64,6 +76,7 @@
     <footer>
 
     </footer>
+    <script src="https://kit.fontawesome.com/900625d9e2.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script type="text/javascript" src="app.js"></script>

@@ -68,7 +68,6 @@ const cards = [
 
 const fillCard = (card) => {
     card.title.innerText = recipes[card.currRecipe].title;
-    card.text.innerText = recipes[card.currRecipe].text;
     card.img.src = recipes[card.currRecipe].img;
     $(card.cardNumber).attr('href', recipes[card.currRecipe].link)
 }

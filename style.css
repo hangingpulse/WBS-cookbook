@@ -11,6 +11,7 @@ html {
 
 body {
     box-sizing: border-box;
+    background-color: #eafbea;
 }
 
 /* NAVBAR */
@@ -24,11 +25,14 @@ body {
 /* Cards */
 
 
-.card {
+.card-gallery {
     width: 20rem;
-    height: 25rem;
+    height: 16rem;
     margin: 1rem;
     padding: 0;
+    background-color: #6f9a8d;
+    color: white;
+    box-shadow: 3px 3px 5px #6f9a8d;
 }
 
 .card:hover {
@@ -39,7 +43,53 @@ body {
 .card-img-top {
     object-fit: cover;
     width: 100%;
-    height: 70%;
+    height: 78%;
+    border-bottom: 1px solid #1f6650;
+}
+
+.card-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+/* Card Icons */
+
+.star-background {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 0 0 1rem 0;
+    border-right: 3px solid #1f6650;
+    border-bottom: 3px solid #1f6650;
+}
+
+.star-fill {
+    position: absolute;
+    top: 0.55rem;
+    left: 0.55rem;
+    color: #ea5e5e;
+}
+
+.star-no-fill {
+    position: absolute;
+    top: 0.55rem;
+    left: 0.55rem;
+    color: #ea5e5e;
+}
+
+/* Gallery Buttons */
+
+.btn-gallery {
+    color: #1f6650;
+}
+
+.btn-gallery:hover {
+    cursor: pointer;
+}
+
+#btn-cards-left {
+    text-align: right;
 }
 
 /* Gallery Animation */

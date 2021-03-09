@@ -1,12 +1,12 @@
 /* GENERAL ELEMENTS */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
@@ -153,4 +153,89 @@ body {
 }
 
 
-/* FOOTER */
+
+/* ------------------------------- FOOTER -------------------------------------------*/
+
+.entire-footer {
+  padding: 2rem;
+}
+
+.footer-question {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+.first-footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.second-footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.third-footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.stay-in-touch {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#email {
+  border: 0.2rem dotted #e6e6e6;
+  min-width: 15rem;
+  padding: 1rem;
+  background-color: transparent;
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: left;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  /*margin: 5px 10px 5px 0;*/
+}
+
+.terms-conditions-copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.terms-conditions {
+  display: inline-flex;
+}
+
+.terms-conditions a {
+  padding-right: 3rem;
+}
+
+.copyright {
+  display: inline-flex;
+}

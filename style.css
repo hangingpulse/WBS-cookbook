@@ -38,6 +38,7 @@ body {
 .card:hover {
     transform: scale(1.1);
     transition: all 0.1s;
+    box-shadow: 3px 3px 10px #6f9a8d;
 }
 
 .card-img-top {
@@ -142,11 +143,13 @@ body {
 }
 
 #recipe .card {
-    width: 100%
+    width: 100%;
+    font-family: Raleway;
 }
 
 #recipe h5 {
     font-size: 5rem;
+    font-family: 'Josefin Sans';
 }
 
 

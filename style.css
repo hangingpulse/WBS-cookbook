@@ -11,9 +11,6 @@ html {
 
 body {
   box-sizing: border-box;
-}
-
-header main {
   background-color: #eafbea;
 }
 
@@ -242,18 +239,18 @@ header main {
 
 a:link {
   text-decoration: none;
-  color: black;#
-  }
+  color: black;
+}
 
 a:visited {
   text-decoration: none;
   color: #1f6650;
- }
+}
 
 a:hover {
   text-decoration: none;
-  color:  #eafbea;
-  }
+  color: #eafbea;
+}
 
 .terms-conditions a {
   padding-right: 3rem;

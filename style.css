@@ -30,7 +30,7 @@ body {
 .btn-pasta-select:hover {
   cursor: pointer;
   text-decoration: underline;
-  text-decoration-color:#ea5e5e;
+  text-decoration-color: #ea5e5e;
 }
 
 .hr-gallery {
@@ -43,7 +43,6 @@ body {
 }
 
 /* Cards */
-
 
 .card-gallery {
   width: 20rem;

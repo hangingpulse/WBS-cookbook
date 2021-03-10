@@ -2,20 +2,21 @@ $(document).ready(() => {
     $('#recipe').load('penne-arrabiata.html');
 })
 
-
-
+// jQuery JavaScript-Framework
 
 // Recipe Objects
 const recipes = [
     {
         title: 'Penne all\'Arrabiata',
+        type: 'Penne',
         text: 'Hot and tasty. A classic',
         img: 'img/arrabiata-card.jpg',
-        link: 'penne-arrabiata.html'
+        link: 'penne-arrabiata.html',
     },
 
     {
         title: 'Penne Gorgonzola',
+        type: 'Penne',
         text: 'Cheese and Spinach. Delightful',
         img: 'img/penne-gorgonzola-card.jpg',
         link: 'penne-gorgonzola.html'
@@ -23,6 +24,7 @@ const recipes = [
 
     {
         title: 'Spaghetti Carbonara',
+        type: 'Spaghetti',
         text: 'Eggcelent.',
         img: 'img/carbonara.jpg',
         link: 'spag-carbonara.html'
@@ -30,6 +32,7 @@ const recipes = [
 
     {
         title: 'Spaghetti Bolognese',
+        type: 'Spaghetti',
         text: 'Even better in the vegan version',
         img: 'img/bolognese.jpg',
         link: 'spag-bolognese.html'

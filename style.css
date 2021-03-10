@@ -10,8 +10,8 @@ html {
 }
 
 body {
-    box-sizing: border-box;
-    background-color: #eafbea;
+  box-sizing: border-box;
+  background-color: #eafbea;
 }
 
 /* NAVBAR */
@@ -19,7 +19,6 @@ body {
 /* MAIN PAGE */
 
 /* General */
-
 
 /* Pasta Selection */
 
@@ -45,140 +44,140 @@ body {
 
 /* Cards */
 
+
 .card-gallery {
-    width: 20rem;
-    height: 16rem;
-    margin: 1rem;
-    padding: 0;
-    background-color: #6f9a8d;
-    color: white;
-    box-shadow: 3px 3px 5px #6f9a8d;
+  width: 20rem;
+  height: 16rem;
+  margin: 1rem;
+  padding: 0;
+  background-color: #6f9a8d;
+  color: white;
+  box-shadow: 3px 3px 5px #6f9a8d;
 }
 
 .card:hover {
-    transform: scale(1.1);
-    transition: all 0.1s;
-    box-shadow: 3px 3px 10px #6f9a8d;
+  transform: scale(1.1);
+  transition: all 0.1s;
+  box-shadow: 3px 3px 10px #6f9a8d;
 }
 
 .card-img-top {
-    object-fit: cover;
-    width: 100%;
-    height: 78%;
-    border-bottom: 1px solid #1f6650;
+  object-fit: cover;
+  width: 100%;
+  height: 78%;
+  border-bottom: 1px solid #1f6650;
 }
 
 .card-title {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
 }
 
 /* Card Icons */
 
 .star-background {
-    width: 3.5rem;
-    height: 3.5rem;
-    position: absolute;
-    background-color: #fff;
-    border-radius: 0 0 1rem 0;
-    border-right: 3px solid #1f6650;
-    border-bottom: 3px solid #1f6650;
+  width: 3.5rem;
+  height: 3.5rem;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 0 0 1rem 0;
+  border-right: 3px solid #1f6650;
+  border-bottom: 3px solid #1f6650;
 }
 
 .star-fill {
-    position: absolute;
-    top: 0.55rem;
-    left: 0.55rem;
-    color: #ea5e5e;
+  position: absolute;
+  top: 0.55rem;
+  left: 0.55rem;
+  color: #ea5e5e;
 }
 
 .star-no-fill {
-    position: absolute;
-    top: 0.55rem;
-    left: 0.55rem;
-    color: #ea5e5e;
+  position: absolute;
+  top: 0.55rem;
+  left: 0.55rem;
+  color: #ea5e5e;
 }
 
 /* Gallery Buttons */
 
 .btn-gallery {
-    color: #1f6650;
+  color: #1f6650;
 }
 
 .btn-gallery:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #btn-cards-left {
-    text-align: right;
+  text-align: right;
 }
 
 /* Gallery Animation */
 
 @keyframes card1 {
-    0% {
-        transform: scale(1);
-    }
-    25% {
-        transform: scale(1.1);
-    }
-    50% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
 }
 
 @keyframes card2 {
-    25% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    75% {
-        transform: scale(1);
-    }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(1);
+  }
 }
 
 @keyframes card3 {
-    50% {
-        transform: scale(1);
-    }
-    75% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* Recipes */
 
 #recipe {
-    margin: 0 auto;
-    max-width: 960px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin: 0 auto;
+  max-width: 960px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #recipe .card {
-    width: 100%;
-    font-family: Raleway;
+  width: 100%;
+  font-family: Raleway;
 }
 
 #recipe h5 {
-    font-size: 5rem;
-    font-family: 'Josefin Sans';
+  font-size: 5rem;
+  font-family: "Josefin Sans";
 }
-
-
 
 /* ------------------------------- FOOTER -------------------------------------------*/
 
 .entire-footer {
   padding: 2rem;
-  border: 1px solid black;
+  max-height: 25rem;
+  background-color: #6f9a8d;
 }
 
 .footer-question {
@@ -225,22 +224,30 @@ body {
 }
 
 #email {
-  border: 0.2rem dotted #e6e6e6;
+  border: 0.2rem dotted #eafbea;
   min-width: 15rem;
   padding: 1rem;
   background-color: transparent;
 }
 
+.d-flex {
+  max-height: 3rem;
+}
+
+/*
 .form-inline {
   display: flex;
   flex-flow: row wrap;
   align-items: left;
 }
+*/
 
+/*
 .form-inline input {
   vertical-align: middle;
-  /*margin: 5px 10px 5px 0;*/
+  /*margin: 5px 10px 5px 0;
 }
+*/
 
 .terms-conditions-copyright {
   display: flex;
@@ -251,6 +258,21 @@ body {
 
 .terms-conditions {
   display: inline-flex;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #1f6650;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #eafbea;
 }
 
 .terms-conditions a {

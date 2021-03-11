@@ -15,7 +15,6 @@ let currRecipeList = recipes
 const fillCard = (card, recipeList) => {
     card.title.innerText = recipeList[card.currRecipe].title;
     card.img.src = recipeList[card.currRecipe].img;
-    $(card.cardNumber).attr('href', recipeList[card.currRecipe].link)
 }
 
 const fillCards = () => {

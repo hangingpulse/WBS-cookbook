@@ -12,6 +12,11 @@ html {
 body {
   box-sizing: border-box;
   background-color: #eafbea;
+  font-family: Raleway, sans-serif;
+}
+
+h1 {
+  font-family: "Josefin Sans";
 }
 
 /* NAVBAR */
@@ -90,7 +95,7 @@ body {
 .btn-pasta-select:hover {
   cursor: pointer;
   text-decoration: underline;
-  text-decoration-color:#ea5e5e;
+  text-decoration-color: #ea5e5e;
 }
 
 .hr-gallery {
@@ -103,7 +108,6 @@ body {
 }
 
 /* Cards */
-
 
 .card-gallery {
   width: 20rem;

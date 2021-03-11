@@ -1,7 +1,7 @@
 // Content of the Recipe Slot that loads as the default (curently Arrabiata recipe)
 
 $(document).ready(() => {
-    $('#recipe').load('recipes/penne-arrabiata.html');
+    $('#recipe').load('recipes/spag-carbonara.html');
     $('.btn-all-recipes').addClass('btn-pasta-selected')
 })
 

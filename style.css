@@ -12,6 +12,11 @@ html {
 body {
   box-sizing: border-box;
   background-color: #eafbea;
+  font-family: Raleway, sans-serif;
+}
+
+h1 {
+  font-family: "Josefin Sans";
 }
 
 /* NAVBAR */

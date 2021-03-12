@@ -117,7 +117,7 @@ body {
 
 /* Gallery Animation */
 
-@keyframes card1 {
+@keyframes card0 {
   0% {
     transform: scale(1);
   }
@@ -129,7 +129,7 @@ body {
   }
 }
 
-@keyframes card2 {
+@keyframes card1 {
   25% {
     transform: scale(1);
   }
@@ -141,7 +141,7 @@ body {
   }
 }
 
-@keyframes card3 {
+@keyframes card2 {
   50% {
     transform: scale(1);
   }

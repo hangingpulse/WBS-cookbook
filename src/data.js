@@ -60,9 +60,9 @@ class Card {
         const isOnList = (recipe) => currRecipeList._recipes[this._currRecipe] === recipe
         return currRecipeList._recipes.findIndex(isOnList)
     }
-    animateCard(timeout) {
+    animateCard(animIndex, timeout) {
         $(`#card${this._index}`).css({
-            animation: `card${this._index} 0.5s`
+            animation: `card${animIndex} 0.5s`
         })
         setTimeout(() => {
             this.fillCard()

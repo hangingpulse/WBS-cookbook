@@ -67,9 +67,9 @@ $('#btn-cards-right').click(() => {
               
         }
     })
-    card2.animateCard(125)
-    card1.animateCard(250)
-    card0.animateCard(375)
+    card2.animateCard(0, 125)
+    card1.animateCard(1, 250)
+    card0.animateCard(2, 375)
     setTimeout(() => {
         $('.card-gallery').css({
             animation: ""
@@ -86,9 +86,9 @@ $('#btn-cards-left').click(() => {
             card._currRecipe--;   
         }
     })
-    card0.animateCard(125)
-    card1.animateCard(250)
-    card2.animateCard(375)
+    card0.animateCard(0, 125)
+    card1.animateCard(1, 250)
+    card2.animateCard(2, 375)
     setTimeout(() => {
         $('.card-gallery').css({
             animation: ""

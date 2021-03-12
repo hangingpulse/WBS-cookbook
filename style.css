@@ -109,10 +109,21 @@ h1 {
 }
 
 /* Cards */
+.gallery-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card-container {
+  max-width: 960px;
+  margin: 2rem;
+}
 
 .card-gallery {
-  width: 20rem;
-  height: 16rem;
+  width: 18rem;
+  height: 18rem;
   margin: 1rem;
   padding: 0;
   background-color: #6f9a8d;
@@ -120,7 +131,7 @@ h1 {
   box-shadow: 3px 3px 5px #6f9a8d;
 }
 
-.card:hover {
+.card-gallery:hover {
   transform: scale(1.1);
   transition: all 0.1s;
   box-shadow: 3px 3px 10px #6f9a8d;
@@ -129,13 +140,23 @@ h1 {
 .card-img-top {
   object-fit: cover;
   width: 100%;
-  height: 78%;
+  height: 100%;
   border-bottom: 1px solid #1f6650;
+}
+
+.card-body {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(31, 102, 80, 0.6);
+  width: 100%;
+  min-height: 25%;
+  padding: 0.5rem; 
 }
 
 .card-title {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.5rem;
+  margin: 0;
 }
 
 /* Card Icons */
@@ -216,6 +237,40 @@ h1 {
   }
 }
 
+/* GALLERY MEDIA QUERIES */
+/* breakpoints following Bootstrap */
+
+@media (min-width: 768px) and (max-width: 960px) {
+
+}
+
+
+@media (max-width:768px) and (min-width:576px) {
+  html {
+    font-size: 58%;
+  }
+  .card-gallery {
+    height: 14rem;
+    width: 14rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #card2 {
+    visibility: hidden;
+    position: absolute;
+  }
+  html {
+    font-size: 53%;
+  }
+  .card-gallery {
+    width: 12rem;
+    height: 15rem;
+  }
+
+}
+
+
 /* Recipes */
 
 #recipe {
@@ -225,16 +280,6 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-#recipe .card {
-  width: 100%;
-  font-family: Raleway;
-}
-
-#recipe h5 {
-  font-size: 5rem;
-  font-family: "Josefin Sans";
 }
 
 /* ------------------------------- FOOTER -------------------------------------------*/

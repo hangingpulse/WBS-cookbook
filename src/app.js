@@ -1,3 +1,21 @@
+// nShare button
+
+const shareButton = document.querySelector("share");
+console.log(shareButton);
+
+$( document ).ready(function() {
+    //custom button for homepage
+    $( ".share-btn" ).click(function(e) {
+         $('.networks-5').not($(this).next( ".networks-5" )).each(function(){
+            $(this).removeClass("active");
+        });
+        $(this).next( ".networks-5" ).toggleClass( "active" );
+   });   
+});
+
+// ****************GALLERY CODE*******************//
+
+
 let currRecipeList = []
 
 // Creating new Cards and adding them to a list
@@ -13,12 +31,15 @@ const fillCards = () => {
     });
 }
 
+
+
 // Content of the Recipe Slot that loads as the default (curently Arrabiata recipe)
 
 $(document).ready(() => {
+
     currRecipeList = allRecipes
     fillCards();
-    $('#recipe').load('recipes/penne-arrabiata.html');
+    $('#recipe').load('recipes/spag-carbonara.html');
     $('.btn-all-recipes').addClass('btn-pasta-selected')
 })
 

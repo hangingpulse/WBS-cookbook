@@ -12,6 +12,7 @@ html {
 body {
   box-sizing: border-box;
   background-color: #eafbea;
+  background: linear-gradient(#eafbea, 75%, #1f6650);
   font-family: Raleway, sans-serif;
 }
 
@@ -60,7 +61,7 @@ h1 {
 }
 .share-button.sharer {
   height: 20px;
-  padding: 100px;
+  /* padding: 100px; */
 }
 .share-button.sharer .social.active.top {
   transform: scale(1) translateY(-10px);
@@ -284,10 +285,17 @@ h1 {
 
 /* ------------------------------- FOOTER -------------------------------------------*/
 
+.hr--footer {
+  width: 60%;
+  background-color: #323b43;  
+  margin: 0 auto;
+}
+
 .entire-footer {
   padding: 2rem;
   max-height: 25rem;
   background-color: #6f9a8d;
+  background-color: transparent;
 }
 
 .footer-question {
@@ -298,28 +306,13 @@ h1 {
 .footer {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
   padding-bottom: 2rem;
 }
 
-.first-footer-column {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.second-footer-column {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.third-footer-column {
+.footer-column {
   display: flex;
   flex-direction: column;
   align-items: flex-start;

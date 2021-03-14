@@ -27,6 +27,14 @@ h1 {
   font-size: 1.5rem;
 }
 
+
+.navbar-brand, .search-bar {
+  width: 15vw;
+}
+
+
+
+
 .social .fbtn {
   width: 50px;
   display: inline-block;
@@ -92,6 +100,7 @@ h1 {
 .btn-pasta-select {
   font-size: 1.5rem;
   text-align: center;
+  margin: 0 2rem;
 }
 
 .btn-pasta-select:hover {
@@ -120,6 +129,7 @@ h1 {
 .card-container {
   max-width: 960px;
   margin: 2rem;
+  margin-top: 0;
 }
 
 .card-gallery {

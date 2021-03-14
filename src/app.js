@@ -39,7 +39,7 @@ $(document).ready(() => {
 
     currRecipeList = allRecipes
     fillCards();
-    $('#recipe').load('recipes/spag-carbonara.html');
+    $('#recipe').load('landingpage.html');
     $('.btn-all-recipes').addClass('btn-pasta-selected')
 })
 
@@ -113,3 +113,17 @@ btnPasta.click((event) => {
     $(event.target).addClass('btn-pasta-selected')
 })
 
+//Landingpage
+
+
+const imageArray = ['pasta-la-vista1.jpg', 'pasta-la-vista.jpg', 'pasta-bilities.jpg', 'overdressed_pasta.jpg', 'pasta-types.png'];
+
+/*
+function welcomeImages(){
+    const imageArray = [Math.floor(Math.random()*imageArray.length)];
+    OR
+    const randomItem = imageArray [Math.floor(Math.random()*imageArray.length)];
+    document.getElementById('welcomeimg').src=`img/${imageArray}`
+}
+*/
+       

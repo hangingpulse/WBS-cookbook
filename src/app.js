@@ -1,3 +1,20 @@
+
+// Recipe image hover effect
+
+const recipeItem = document.querySelector('.recipe-img-background');
+console.log(recipeItem);
+
+
+recipeItem.addEventListener('mouseover', () => {
+    recipeItem.classList.add('img-darken');
+})
+
+recipeItem.addEventListener('mouseout', () => {
+    recipeItem.classList.remove('img-darken');
+})
+
+
+
 // nShare button
 
 const shareButton = document.querySelector("share");

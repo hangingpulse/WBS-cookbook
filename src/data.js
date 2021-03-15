@@ -1,4 +1,4 @@
-// Recipe Class
+ // Recipe Class
 class Recipe {
     constructor(title, type, id, favorite=false) {
         this._title = title;

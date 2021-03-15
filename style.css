@@ -22,18 +22,14 @@ h1 {
 
 /* NAVBAR */
 
-
-.nav-item, .navbar-brand {
+.nav-item,
+.navbar-brand {
   font-size: 1.5rem;
 }
-
 
 .navbar-brand, .search-bar {
   width: 15vw;
 }
-
-
-
 
 .social .fbtn {
   width: 50px;
@@ -41,10 +37,11 @@ h1 {
   color: #fff;
   text-align: center;
   line-height: 18px;
-  /* float: left; */
+  /*float: left;*/
 }
+
 .social .fa {
-  padding: 15px 0px
+  padding: 15px 0px;
 }
 .facebook {
   background-color: #3b5998;
@@ -79,17 +76,20 @@ h1 {
   transition: all 0.4s ease 0s;
   visibility: visible;
 }
-.share-button.sharer .social.networks-5 .share-button.sharer .social.top {
+.share-button.sharer .social.networks-5 {
+}
+
+.share-button.sharer .social.top {
   margin-top: -80px;
   transform-origin: 0 0 0;
 }
+
 .share-button.sharer .social {
   margin-left: -65px;
   opacity: 0;
   transition: all 0.4s ease 0s;
   visibility: hidden;
 }
-
 
 /* MAIN PAGE */
 
@@ -127,7 +127,6 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .card-container {
@@ -165,7 +164,7 @@ h1 {
   background-color: rgba(31, 102, 80, 0.6);
   width: 100%;
   min-height: 25%;
-  padding: 0.5rem; 
+  padding: 0.5rem;
 }
 
 .card-title {
@@ -214,6 +213,13 @@ h1 {
   text-align: right;
 }
 
+/*Share button*/
+
+.share-btn:hover {
+  background-color: #ea5e5e;
+}
+
+
 /* Gallery Animation */
 
 @keyframes card0 {
@@ -256,11 +262,9 @@ h1 {
 /* breakpoints following Bootstrap */
 
 @media (min-width: 768px) and (max-width: 960px) {
-
 }
 
-
-@media (max-width:768px) and (min-width:576px) {
+@media (max-width: 768px) and (min-width: 576px) {
   html {
     font-size: 58%;
   }
@@ -282,10 +286,9 @@ h1 {
     width: 12rem;
     height: 15rem;
   }
-
 }
 
-/* **********************RECIPE ****************************/
+/* **********************RECIPES ****************************/
 
 #recipe {
   margin: 3rem auto;
@@ -439,8 +442,6 @@ td {
 }
 
 
-
-
 /* ------------------------------- FOOTER -------------------------------------------*/
 
 .hr--footer {
@@ -528,7 +529,7 @@ a:link {
 
 a:visited {
   text-decoration: none;
-  color: #1f6650;
+  color: black;
 }
 
 a:hover {

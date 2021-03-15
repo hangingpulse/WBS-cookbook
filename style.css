@@ -12,6 +12,7 @@ html {
 body {
   box-sizing: border-box;
   background-color: #eafbea;
+  background: linear-gradient(#eafbea, 75%, #1f6650);
   font-family: Raleway, sans-serif;
 }
 
@@ -21,9 +22,18 @@ h1 {
 
 /* NAVBAR */
 
+
 .nav-item, .navbar-brand {
   font-size: 1.5rem;
 }
+
+
+.navbar-brand, .search-bar {
+  width: 15vw;
+}
+
+
+
 
 .social .fbtn {
   width: 50px;
@@ -31,7 +41,7 @@ h1 {
   color: #fff;
   text-align: center;
   line-height: 18px;
-  float: left;
+  /* float: left; */
 }
 .social .fa {
   padding: 15px 0px
@@ -59,7 +69,7 @@ h1 {
 }
 .share-button.sharer {
   height: 20px;
-  padding: 100px;
+  /* padding: 100px; */
 }
 .share-button.sharer .social.active.top {
   transform: scale(1) translateY(-10px);
@@ -69,7 +79,7 @@ h1 {
   transition: all 0.4s ease 0s;
   visibility: visible;
 }
-.share-button.sharer .social.networks-5 {} .share-button.sharer .social.top {
+.share-button.sharer .social.networks-5 .share-button.sharer .social.top {
   margin-top: -80px;
   transform-origin: 0 0 0;
 }
@@ -90,6 +100,7 @@ h1 {
 .btn-pasta-select {
   font-size: 1.5rem;
   text-align: center;
+  margin: 0 2rem;
 }
 
 .btn-pasta-select:hover {
@@ -107,11 +118,27 @@ h1 {
   color: #ea5e5e;
 }
 
+/* **********************GALLERY ****************************/
+
 /* Cards */
 
+
+.gallery-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card-container {
+  max-width: 960px;
+  margin: 2rem;
+  margin-top: 0;
+}
+
 .card-gallery {
-  width: 20rem;
-  height: 16rem;
+  width: 18rem;
+  height: 18rem;
   margin: 1rem;
   padding: 0;
   background-color: #6f9a8d;
@@ -119,7 +146,7 @@ h1 {
   box-shadow: 3px 3px 5px #6f9a8d;
 }
 
-.card:hover {
+.card-gallery:hover {
   transform: scale(1.1);
   transition: all 0.1s;
   box-shadow: 3px 3px 10px #6f9a8d;
@@ -128,13 +155,23 @@ h1 {
 .card-img-top {
   object-fit: cover;
   width: 100%;
-  height: 78%;
+  height: 100%;
   border-bottom: 1px solid #1f6650;
+}
+
+.card-body {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(31, 102, 80, 0.6);
+  width: 100%;
+  min-height: 25%;
+  padding: 0.5rem; 
 }
 
 .card-title {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.5rem;
+  margin: 0;
 }
 
 /* Card Icons */
@@ -179,7 +216,7 @@ h1 {
 
 /* Gallery Animation */
 
-@keyframes card1 {
+@keyframes card0 {
   0% {
     transform: scale(1);
   }
@@ -191,7 +228,7 @@ h1 {
   }
 }
 
-@keyframes card2 {
+@keyframes card1 {
   25% {
     transform: scale(1);
   }
@@ -203,7 +240,7 @@ h1 {
   }
 }
 
-@keyframes card3 {
+@keyframes card2 {
   50% {
     transform: scale(1);
   }
@@ -215,10 +252,43 @@ h1 {
   }
 }
 
-/* Recipes */
+/* GALLERY MEDIA QUERIES */
+/* breakpoints following Bootstrap */
+
+@media (min-width: 768px) and (max-width: 960px) {
+
+}
+
+
+@media (max-width:768px) and (min-width:576px) {
+  html {
+    font-size: 58%;
+  }
+  .card-gallery {
+    height: 14rem;
+    width: 14rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #card2 {
+    visibility: hidden;
+    position: absolute;
+  }
+  html {
+    font-size: 53%;
+  }
+  .card-gallery {
+    width: 12rem;
+    height: 15rem;
+  }
+
+}
+
+/* **********************RECIPE ****************************/
 
 #recipe {
-  margin: 0 auto;
+  margin: 3rem auto;
   max-width: 960px;
   text-align: center;
   display: flex;
@@ -226,24 +296,164 @@ h1 {
   align-items: center;
 }
 
-#recipe .card {
-  width: 100%;
-  font-family: Raleway;
+.row-picture-ingredients {
+  display: flex;
+  align-items: center;
 }
 
-#recipe h5 {
-  font-size: 5rem;
-  font-family: "Josefin Sans";
+.img--recipe {
+  width: 80vw;
+  max-width: 1174px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px #6f9a8d;
 }
+
+.ingredients__table {
+  width: 100%;
+  margin-left: auto;
+  background-color: rgba(31, 102, 80, 0.95);
+  color: white; 
+  font-size: 1.2rem;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px #6f9a8d;
+  margin-right: -2rem;
+}
+
+.heading {
+  color: #ea5e5e;
+  background-color: white;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 0.5rem 1rem 0.1rem 1rem;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;;
+}
+
+
+.tablehead {
+  text-decoration: underline;
+  color: white;
+  font-size: 1.4rem;
+}
+
+td {
+  color: white;
+  width: 10rem;
+}
+
+.recipe-text {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: -2rem;
+  background-color: #6f9a8d;
+  color: black; 
+  font-size: 1.2rem;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px #6f9a8d;
+  
+  position: relative;
+}
+
+
+.recipe-text__steps {
+  text-decoration: underline;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.recipe-text__instruction {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+
+/* MEDIA QUERIES -- Recipe */
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .img--recipe {
+    width: 70vw;
+  }
+
+  .ingredients__table {
+    font-size: 1rem;
+  }
+
+  .recipe-text__steps, .recipe-text__instruction {
+    font-size: 1.2rem;
+  }
+
+}
+
+
+@media (max-width:768px) and (min-width:576px) {
+  html {
+    font-size: 58%;
+  }
+  /* CARD GALLERY */
+  .card-gallery {
+    height: 14rem;
+    width: 14rem;
+  }
+  /* RECIPE */
+  .img--recipe {
+    width: 80vw;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  #card2 {
+    visibility: hidden;
+    position: absolute;
+  }
+  html {
+    font-size: 53%;
+  }
+  .card-gallery {
+    width: 12rem;
+    height: 15rem;
+  }
+
+  /* RECIPE */
+
+  .row-picture-ingredients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img--recipe {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .ingredients__table {
+    width: 85vw;
+  }
+
+}
+
 
 
 
 /* ------------------------------- FOOTER -------------------------------------------*/
 
+.hr--footer {
+  width: 60%;
+  background-color: #323b43;  
+  margin: 0 auto;
+}
+
 .entire-footer {
   padding: 2rem;
   max-height: 25rem;
   background-color: #6f9a8d;
+  background-color: transparent;
 }
 
 .footer-question {
@@ -254,28 +464,13 @@ h1 {
 .footer {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
   padding-bottom: 2rem;
 }
 
-.first-footer-column {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.second-footer-column {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.third-footer-column {
+.footer-column {
   display: flex;
   flex-direction: column;
   align-items: flex-start;

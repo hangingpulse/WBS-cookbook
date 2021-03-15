@@ -4,132 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <!-- LInk to Bootstrap -->
-       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-       <!-- Link to Google Fonts  -->
-       <link rel="preconnect" href="https://fonts.gstatic.com">
-       <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway&family=Josefin+Sans&display=swap" rel="stylesheet"> 
-   
-       <!-- Link to own CSS -->
-       <link rel="stylesheet" href="style.css">
     <title>Spaghetti Bolognese</title>
 </head>
 <body>
-    <div class="container picture-table">
-        <div class="row">
+  <!--------- WHOLE RECIPE ------------->
+    <div class="container recipe">
+      <!------- Image and Ingredients --------->
+      <div class="row row-picture-ingredients">
         <!----------------------Image ------------------>
-          <div class="col-sm">
-            <img class="w-100" src="img/spag-bolognese.jpg" width="" height="" alt="spag-bolognese img"/>        
-          </div>
+        <div class="col-md-7">
+          <img class="img--recipe" src="img/spag-bolognese-recipe.jpeg" width="" height="" alt="spag-bolognese img"/>        
+        </div>
 
          <!----------Table of ingredients---------------> 
-          <div class="col-sm">
-            <table class="table table-striped"><strong>What we need</strong>
+          <div class="col-md-5 ingredients">
+            <div class="col-md-5 ingredients__table">
+              <table class="table table-striped">
+                <h2 class="heading">What we need</h2>
                 <thead>
                   <tr>
-                    <th scope="col"></th>
-                    <th scope="col">Amount</th>
-                    <th scope="col">Ingredients</th>
+                    <th class="tablehead" scope="col">Amount</th>
+                    <th class="tablehead" scope="col">Ingredients</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row"></th>
                     <td>1/2</td>
                     <td>large yellow onion, cut into 2-inch chunks</td>
                   </tr>
                   <tr>
-                    <th scope="row"></th>
                     <td>1</td>
                     <td>large carrot, peeled and thickly sliced</td>
                   </tr>
                   <tr>
-                    <th scope="row"></th>
                     <td>1</td>
                     <td>large stalk celery, thickly sliced</td>
                   </tr>
                   <tr>
-                    <th scope="row"></th>
                     <td>2 tablespoons</td>
                     <td>unsalted butter</td>
                   </tr>
 
                   <tr>
-                    <th scope="row"></th>
                     <td>1 pound</td>
                     <td>ground beef</td>
                   </tr>
                   <tr>
-                    <th scope="row"></th>
                     <td>1/2 teaspoon</td>
                     <td>table salt</td>
                   </tr>
                   <tr>
-                    <th scope="row"></th>
                     <td>1/8 teaspoon</td>
                     <td>freshly ground black pepper</td>
                   </tr>
                   <tr>
-                    <th scope="row"></th>
                     <td>1/2 cup</td>
                     <td>whole milk</td>
                   </tr>
                   <tr>
-                    <th scope="row"></th>
                     <td></td>
                     <td>pinch of nutmeg</td>
                   </tr>
                   <tr>
-                    <th scope="row"></th>
                     <td>3/4 cup</td>
                     <td>dry white wine</td>
                   </tr>
                   <tr>
-                    <th scope="row"></th>
                     <td>1 (28-ounce) can</td>
                     <td>whole San Marzano</td>
                   </tr>
                   <tr>
-                    <th scope="row"></th>
                     <td>12 ounces</td>
                     <td>cooked pasta</td>
                   </tr>
                 </tbody>
               </table>
+            </div>
           </div>
+        <!-- END OF TABLE -->
         </div>
-      </div>
+      <!-- END OF IMAGE AND TABLE -->
+    
+        <!------------INSTRUCTIONS------------------------>
+          <div class="col-md recipe-text">
+            <h2 class="heading heading--instructions">How we prepare it</h2>
+            <p class="recipe-text__steps">1. Chop the vegetables:</p>
+            <p class="recipe-text__instruction">In a food processor, combine the onion, carrot, and celery. Pulse until finely
+              chopped.</p>
+            <p class="recipe-text__steps"> 2. Cook the vegetables:</p>
+            <p class="recipe-text__instruction">In a deep, wide skillet over medium heat, melt the butter. Add the onions,
+              carrots, and celery. Cook, stirring often, for 5 minutes, or until soft and translucent but not browned.</p>
+            <p class="recipe-text__steps">3. Cook the beef:</p>
+            <p class="recipe-text__instruction"> Add the ground beef to the skillet with the sautéed vegetables. Add the salt and
+              pepper. Break the meat up with a fork or a potato masher and cook over medium heat for 3 to 4 minutes, mashing it
+              until it is crumbly and no longer pink. You are not actually browning the meat, just cooking it until it no longer
+              looks raw.<br>
+            </p>
+            <p class="recipe-text__steps"> 4. Simmer the meat and milk:</p>
+            <p class="recipe-text__instruction"> Add the milk to the skillet and simmer, stirring often, for about 4 minutes, or
+              until the milk has almost completely evaporated. Stir in the nutmeg.<br></p>
+            <p class="recipe-text__steps"> 5. Add the wine:</p>
+            <p class="recipe-text__instruction"> Add the wine to the skillet and continue to simmer for about 5 minutes, or until
+              it has almost evaporated.<br></p>
+            <p class="recipe-text__steps"> 6. Crush and add the tomatoes:</p>
+            <p class="recipe-text__instruction">Pour the tomatoes into a bowl and squish them with your hands to break them up so
+              there are no large pieces. Add them to the skillet and bring the sauce to a simmer. Turn the heat to low and simmer
+              the sauce for 15 to 20 minutes, stirring occasionally, until the sauce is thick. If the sauce begins to look dry,
+              stir in 1 to 2 tablespoons hot water. Taste and add more salt and pepper if you feel it's needed.</p>
+            <p class="recipe-text__steps">7. Serve: </p>
+            <p class="recipe-text__instruction">Serve the sauce over a bed of cooked pasta.</p>
+          </div>
+    <!-- END OF INSTRUCTIONS -->
     </div>
-        <!------------Description------------------------>
-    <div class="container description">
-      <div class="row">
-          <div class="col-sm">
-            <p class="text-start"> 
-              <strong>How to prepare Spaghetti Bolognese</strong><br>
-          1.	Chop the vegetables:<br>
-          In a food processor, combine the onion, carrot, and celery. Pulse until finely chopped.<br>
-          2.	Cook the vegetables:<br>
-          In a deep, wide skillet over medium heat, melt the butter. Add the onions, carrots, and celery. Cook, stirring often, for 5 minutes, or until soft and translucent but not browned.<br>
-          3.	Cook the beef:<br>
-          Add the ground beef to the skillet with the sautéed vegetables. Add the salt and pepper. Break the meat up with a fork or a potato masher and cook over medium heat for 3 to 4 minutes, mashing it until it is crumbly and no longer pink. You are not actually browning the meat, just cooking it until it no longer looks raw.<br>
-          4.	Simmer the meat and milk:<br>
-          Add the milk to the skillet and simmer, stirring often, for about 4 minutes, or until the milk has almost completely evaporated. Stir in the nutmeg.<br>
-          5.	Add the wine:<br>
-          Add the wine to the skillet and continue to simmer for about 5 minutes, or until it has almost evaporated.<br>
-          6.	Crush and add the tomatoes:<br>
-          Pour the tomatoes into a bowl and squish them with your hands to break them up so there are no large pieces.<br>
-          Add them to the skillet and bring the sauce to a simmer. Turn the heat to low and simmer the sauce for 15 to 20 minutes, stirring occasionally, until the sauce is thick. If the sauce begins to look dry, stir in 1 to 2 tablespoons hot water. Taste and add more salt and pepper if you feel it's needed.<br>
-          7.	Serve:<br>
-          Serve the sauce over a bed of cooked pasta.
-        </p>
-      </div>
-    </div>
-
-      <script src="https://kit.fontawesome.com/900625d9e2.js" crossorigin="anonymous"></script>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-      <script type="text/javascript" src="src/data.js"></script>
-      <script type="text/javascript" src="src/app.js"></script>
-</body>
+    <!-- END OF WHOLE RECIPE -->
 </html>

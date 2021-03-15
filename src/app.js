@@ -1,3 +1,11 @@
+const imageArray = ['pasta-la-vista1.jpg', 'pasta-la-vista.jpg', 'pasta-bilities.jpg', 'overdressed_pasta.jpg', 'pasta-types.png'];
+
+function welcomeImages(){
+   document.getElementById('welcomeimg').src=`./img/${imageArray[Math.floor(Math.random()*imageArray.length)]}`;
+}
+console.log(imageArray[Math.floor(Math.random()*imageArray.length)]);
+
+
 // nShare button
 
 const shareButton = document.querySelector("share");
@@ -41,7 +49,10 @@ $(document).ready(() => {
     fillCards();
     $('#recipe').load('landingpage.html');
     $('.btn-all-recipes').addClass('btn-pasta-selected')
+    document.querySelector('.welcome').addEventListener('click', welcomeImages);
+    welcomeImages();
 })
+
 
 
 // Load Recipe with Selection
@@ -115,11 +126,5 @@ btnPasta.click((event) => {
 
 //LANDINGPAGE
 
-const imageArray = ['pasta-la-vista1.jpg', 'pasta-la-vista.jpg', 'pasta-bilities.jpg', 'overdressed_pasta.jpg', 'pasta-types.png'];
 
-function welcomeImages(){
-   document.getElementById('welcomeimg').src=`./img/${imageArray[Math.floor(Math.random()*imageArray.length)]}`;
-}
-
-welcomeImages();
     

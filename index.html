@@ -18,11 +18,11 @@
 <body>
     <!--TEST-->
     <header class="header">
-        <img class="img-logo" src="" alt="">
+       
         <div class="nav-wrapper">
-            <nav class="navbar navbar-expand-md navbar-light style="background-color: #e3f2fd;">
+            <nav class="navbar navbar-expand-md m-2 mt-4 navbar-light">
               <div class="container-fluid">
-                <a class="navbar-brand" href="#">Pasta Cookbook</a>
+                <a class="navbar-brand" href="#"><div class="heading">Pasta la Vista</div></a>
                 <button
                   class="navbar-toggler"
                   type="button"
@@ -35,42 +35,25 @@
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav nav-tabs">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0 nav">
+                    <li class="">
+                      <div class="btn-pasta-select btn-all-recipes" aria-current="page" href="#">All Recipes</div>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
+                    <li>
+                      <div class="btn-pasta-select" href="#">Penne</div>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        id="navbarDropdown"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Pasta type
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item btn-pasta-select" href="#">Penne</a></li>
-                        <li><a class="dropdown-item btn-pasta-select" href="#">Spaghetti</a></li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li>
-                          <a class="dropdown-item btn-pasta-select" href="#">Various</a>
-                        </li>
-                      </ul>
+                    <li>
+                      <div class="btn-pasta-select" href="#">Spaghetti</div>
                     </li>
-                    <!-- <li class="nav-item">
-                      <a class="nav-link disabled"
-                        href="#"
-                        tabindex="-1"
-                        aria-disabled="true"
-                        >Disabled</a> -->
+                    <li>
+                      <div class="btn-pasta-select" href="#">Lasagna</div>
+                    </li>
+                    <li>
+                      <div class="btn-pasta-select" href="#">Various</div>
                     </li>
                   </ul>
 
+<<<<<<< HEAD
                   <!--Share button-->
 
                   <div class="share-button sharer" style="display: block;">
@@ -91,37 +74,30 @@
                       <!-- LinkedIn Share Button -->
                       <a class="fbtn share linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=url&amp;title=title&amp;source=url/"><i class="fa fa-linkedin"></i></a>
                     </div>
+=======
+                  <!--Search Bar-->
+                  <div class="search-bar">
+                    <form class="d-flex">
+                      <input
+                        class="form-control me-2"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                      />
+                      <button class="btn btn-outline-success" type="submit">
+                        Search
+                      </button>
+                    </form>
+>>>>>>> 21b94b7f38285200a0e8542005fe545fc7df3e23
                   </div>
-
-
-                  <form class="d-flex">
-                    <input
-                      class="form-control me-2"
-                      type="search"
-                      placeholder="Search"
-                      aria-label="Search"
-                    />
-                    <button class="btn btn-outline-success" type="submit">
-                      Search
-                    </button>
-                  </form>
                 </div>
               </div>
             </nav>
-          </nav-wrapper>
+          </div class="nav-wrapper">
     </header>
     <!---------------------------------- Main Section ------------------------------------------->
     <main>
-            <div class="container">
-        
-            <div class="pasta-menu row justify-content-center">
-                <div class="btn-all-recipes btn-pasta-select col-2">All Recipes</div>
-                <div class="btn-pasta-select col-2">Penne</div>
-                <div class="btn-pasta-select col-2">Spaghetti</div>
-                <div class="btn-pasta-select col-2">Lasagna</div>
-                <div class="btn-pasta-select col-2">Various</div>
-            </div>
-            <hr class="hr-gallery">
+          <!--------- GALLERY ------------------>
             <div class="gallery-row">
                 <div id="btn-cards-left" class="btn-gallery"><i class="fas fa-caret-left fa-5x"></i></div>
                 <div class="card-container row justify-content-center">
@@ -156,10 +132,31 @@
                 <div id="btn-cards-right" class="btn-gallery"><i class="fas fa-caret-right fa-5x"></i></div>
             </div>
         </div>
+
+         <!--------- SHARE BUTTON ------------------>
+        <div class="share-button sharer" style="display: block;">
+          <button type="button" class="btn btn-success share-btn">Share</button>
+          <div class="social top center networks-5 ">
+            <!-- Facebook Share Button -->
+            <a class="fbtn share facebook" href="https://www.facebook.com/sharer/sharer.php?u=url"><i class="fa fa-facebook"></i></a> 
+            
+            <!-- Google Plus Share Button -->
+            <a class="fbtn share gplus" href="https://plus.google.com/share?url=url"><i class="fa fa-google-plus"></i></a> 
+            
+            <!-- Twitter Share Button -->
+            <a class="fbtn share twitter" href="https://twitter.com/intent/tweet?text=title&amp;url=url&amp;via=creativedevs"><i class="fa fa-twitter"></i></a> 
+           
+            <!-- Pinterest Share Button -->
+            <a class="fbtn share pinterest" href="http://pinterest.com/pin/create/button/?url=url&amp;description=data&amp;media=image"><i class="fa fa-pinterest"></i></a>
+           
+            <!-- LinkedIn Share Button -->
+            <a class="fbtn share linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=url&amp;title=title&amp;source=url/"><i class="fa fa-linkedin"></i></a>
+          </div>
         </div>
         <div id="recipe">
 
         </div>
+        <hr class="hr--footer">
 
     </main>
 
@@ -169,8 +166,8 @@
         <div class="footer-question">
             <h3>Do you like pasta as much as we do?</h3>
         </div>
-        <div class="footer">
-            <div class="first-footer-column">
+        <div class="footer justify-content-around">
+            <div class="footer-column">
                 <h5>Follow us</h5>
                 <p>Find more inspiration on our social media channels</p>
             
@@ -183,11 +180,11 @@
             </ul>
             </div>
 
-            <div class="second-footer-column">
+            <div class="footer-column">
                 <h5>Share your passion with us</h5>
                 <p>Drop us a line at hi@pastalavista.com</p>
            </div>
-           <div class="third-footer-column">
+           <div class="footer-column">
                 <div class="stay-in-touch">
                     <h5>Stay in touch</h5>
                     <!------------------------------------ 

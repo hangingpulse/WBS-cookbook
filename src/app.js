@@ -117,32 +117,15 @@ btnPasta.click((event) => {
 
 
 //Array of image file names
-const images = ['pasta-la-vista1.jpg', 'pasta-la-vista.jpg', 'pasta-bilities.jpg', 'overdressed_pasta.jpg', 'pasta-types.png'];
+const imageArray = ['pasta-la-vista1.jpg', 'pasta-la-vista.jpg', 'pasta-bilities.jpg', 'overdressed_pasta.jpg', 'pasta-types.png'];
 
-//Reference to the container for the images
-const arrayImagesElement = document.getElementById("welcomeimg");
-
-//Function that creates HTMLImageElement instance
-function  createImageNode(fileName, altText) {
-    const img = New Image();
-    img.src = /*filename;*/
-    img.alt = /*altText*/
-    return img;
+function welcomeImages(){
+    const imageArray = [Math.floor(Math.random()*imageArray.length)];
+    OR
+    const randomItem = imageArray [Math.floor(Math.random()*imageArray.length)];
+    document.getElementById('welcomeimg').src=`./img/${imageArray}`
+    OR 
+    document.getElementById('welcomeimg').innnerHTML=`<img src="img/${imageArray}` style="width: 300">
 }
 
-images.forEach(img => {
-    const altText = "The filename for this image:" + img;
-    arrayImagesElement.appendChild(createImageNode(img, altText));
-});
-
-
-
-/*
-function welcomeImages(){
-    const images = [Math.floor(Math.random()*imageArray.length)];
-    OR
-    const randomItem = images [Math.floor(Math.random()*images.length)];
-    document.getElementById('#welcomeimg').src=`./img/${imageArray}`
-}*/
-
-       
+    

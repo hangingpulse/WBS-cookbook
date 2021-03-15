@@ -117,13 +117,27 @@ btnPasta.click((event) => {
 
 
 const imageArray = ['pasta-la-vista1.jpg', 'pasta-la-vista.jpg', 'pasta-bilities.jpg', 'overdressed_pasta.jpg', 'pasta-types.png'];
+console.log(imageArray[1])
+
+
+
+/*const forEach = (imageArray.length -1) => {
+    if (index === -1) {
+        return;
+    }
+
+    console.log(`the number is ${coll [index]}`)
+    forEach(coll, index -1)
+}
+
+
 
 /*
 function welcomeImages(){
     const imageArray = [Math.floor(Math.random()*imageArray.length)];
     OR
     const randomItem = imageArray [Math.floor(Math.random()*imageArray.length)];
-    document.getElementById('welcomeimg').src=`img/${imageArray}`
-}
-*/
+    document.getElementById('#welcomeimg').src=`./img/${imageArray}`
+}*/
+
        

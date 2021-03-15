@@ -6,6 +6,7 @@ class Recipe {
         this._id = id
         this._img = `img/${id}-card.jpg`;
         this._link = `recipes/${id}.html`;
+        this._imgRecipe = `img/${id}-recipe.jpg`;
         this._favorite = favorite;
     }
     loadRecipe(event) { // Edit this!
@@ -76,7 +77,7 @@ class Card {
 const allRecipes = new RecipeList('All Recipes')
 
 const penneArrabiata = new Recipe("Penne all'Arrabiata", 'Penne', 'penne-arrabiata');
-const penneGorgonzola = new Recipe('Penne Gorgonzola', 'Spaghetti', 'penne-gorgonzola');
+const penneGorgonzola = new Recipe('Penne Gorgonzola', 'Penne', 'penne-gorgonzola');
 const spagCarbonara = new Recipe('Spaghetti Carbonara', 'Spaghetti', 'spag-carbonara');
 const oreDellaNonna = new Recipe('Orecchiette della Nonna', 'Various', 'ore-della-nonna');
 const tagSalmon = new Recipe('Tagliatelle with Salmon', 'Various', 'tag-salmon');
@@ -87,12 +88,12 @@ const penneRosa = new Recipe('Penne Rosa', 'Penne', 'penne-rosa');
 const penneAsparagus = new Recipe('Penne with Asparagus', 'Penne', 'penne-asparagus');
 const pennePeaPesto = new Recipe('Penne with Pea Pesto', 'Penne', 'penne-pea-pesto');
 const penneChicken = new Recipe('Penne with Chicken', 'Penne', 'penne-chicken');
-const spagCarretteira = new Recipe('Spaghetti Carretteira', 'Spaghetti', 'spag-carretteira');
+const spagCarretteira = new Recipe('Spaghetti Carrettiera', 'Spaghetti', 'spag-carrettiera');
 const spagLemonGarlic = new Recipe('Spaghetti Lemon & Garlic', 'Spaghetti', 'spag-lemon-garlic');
 const spagPuttanesca = new Recipe('Spaghetti Puttanesca', 'Spaghetti', 'spag-puttanesca');
 const lingSageButter = new Recipe('Linguine with Sage Butter', 'Various', 'ling-sage-butter');
 const spagAglioOlio = new Recipe('Spaghetti Aglio e Olio', 'Spaghetti', 'spag-aglio-olio');
-const spagBolognese = new Recipe('Spahetti Bolognese', 'Spaghetti', 'spag-bolognese');
+const spagBolognese = new Recipe('Spaghetti Bolognese', 'Spaghetti', 'spag-bolognese');
 
 // Adding the Recipes to a new Recipe List
 

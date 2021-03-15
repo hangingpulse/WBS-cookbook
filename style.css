@@ -209,6 +209,13 @@ h1 {
   text-align: right;
 }
 
+/*Share button*/
+
+.share-btn:hover {
+  background-color: #ea5e5e;
+}
+
+
 /* Gallery Animation */
 
 @keyframes card0 {

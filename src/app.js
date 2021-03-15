@@ -115,17 +115,11 @@ btnPasta.click((event) => {
 
 //LANDINGPAGE
 
-
-//Array of image file names
 const imageArray = ['pasta-la-vista1.jpg', 'pasta-la-vista.jpg', 'pasta-bilities.jpg', 'overdressed_pasta.jpg', 'pasta-types.png'];
 
 function welcomeImages(){
-    const imageArray = [Math.floor(Math.random()*imageArray.length)];
-    OR
-    const randomItem = imageArray [Math.floor(Math.random()*imageArray.length)];
-    document.getElementById('welcomeimg').src=`./img/${imageArray}`
-    OR 
-    document.getElementById('welcomeimg').innnerHTML=`<img src="img/${imageArray}` style="width: 300">
+   document.getElementById('welcomeimg').src=`./img/${imageArray[Math.floor(Math.random()*imageArray.length)]}`;
 }
 
+welcomeImages();
     

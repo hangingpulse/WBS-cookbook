@@ -16,20 +16,45 @@ body {
   font-family: Raleway, sans-serif;
 }
 
-h1 {
-  font-family: "Josefin Sans";
+.heading {
+  color: #ea5e5e;
+  background-color: white;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 0.5rem 1rem 0.1rem 1rem;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;;
 }
+
 
 /* NAVBAR */
 
-.nav-item,
-.navbar-brand {
+
+.navbar {
+  align-items: center;
+}
+
+.nav-item, .navbar-brand {
   font-size: 1.5rem;
 }
 
 .navbar-brand, .search-bar {
   width: 15vw;
 }
+
+
+.heading--logo {
+  border: 5px solid #ea5e5e;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  color: #1f6650;
+}
+
+
+
 
 .social .fbtn {
   width: 50px;
@@ -323,18 +348,6 @@ h1 {
   margin-right: -2rem;
 }
 
-.heading {
-  color: #ea5e5e;
-  background-color: white;
-  border-radius: 5px;
-  display: inline-block;
-  padding: 0.5rem 1rem 0.1rem 1rem;
-  font-family: 'Josefin Sans', sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.8rem;
-  margin-bottom: 2rem;;
-}
 
 
 .tablehead {

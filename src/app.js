@@ -39,7 +39,7 @@ $(document).ready(() => {
 
     currRecipeList = allRecipes
     fillCards();
-    $('#recipe').load('recipes/spag-carbonara.html');
+    $('#recipe').load('recipes/spag-bolognese.html');
     $('.btn-all-recipes').addClass('btn-pasta-selected')
 })
 

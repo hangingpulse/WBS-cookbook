@@ -235,12 +235,17 @@ body {
   align-items: center;
 }
 
+.recipe-share-hover {
+  position: relative;
+}
+
 .img--recipe {
   width: 80vw;
   max-width: 1174px;
   border-radius: 20px;
   box-shadow: 3px 3px 3px #6f9a8d;
 }
+
 
 .ingredients__table {
   width:100%;
@@ -251,6 +256,7 @@ body {
   border-radius: 20px;
   box-shadow: 3px 3px 5px #6f9a8d;
   margin-right: -2rem;
+  position: relative;
 }
 
 
@@ -328,9 +334,9 @@ td {
 }
 .share-button.sharer {
   height: 20px;
-  /* position: absolute; */
-  top: 3rem;
-  left: 1rem;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
   transform: scale(1.5)
 }
 .share-button.sharer .social.active.top {

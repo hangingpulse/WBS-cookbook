@@ -10,6 +10,22 @@ $(document).ready(() => {
     welcomeImages();
 })
 
+// nShare button
+
+const shareButton = document.querySelector("share");
+console.log('Hello');
+
+$( document ).ready(function() {
+    //custom button for homepage
+    $( ".share-btn" ).click(function(e) {
+         $('.networks-5').not($(this).next( ".networks-5" )).each(function(){
+            $(this).removeClass("active");
+        });
+        console.log('Hello');
+        $(this).next( ".networks-5" ).toggleClass( "active" );
+   });   
+});
+
 
 // Recipe image hover effect
 
@@ -27,17 +43,3 @@ recipeItem.addEventListener('mouseout', () => {
 
 
 
-// nShare button
-
-const shareButton = document.querySelector("share");
-console.log(shareButton);
-
-$( document ).ready(function() {
-    //custom button for homepage
-    $( ".share-btn" ).click(function(e) {
-         $('.networks-5').not($(this).next( ".networks-5" )).each(function(){
-            $(this).removeClass("active");
-        });
-        $(this).next( ".networks-5" ).toggleClass( "active" );
-   });   
-});

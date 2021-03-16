@@ -241,6 +241,7 @@ body {
 
 .img--recipe {
   width: 80vw;
+  height: 70vh;
   max-width: 1174px;
   border-radius: 20px;
   box-shadow: 3px 3px 3px #6f9a8d;

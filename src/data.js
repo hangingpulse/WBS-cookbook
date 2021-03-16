@@ -12,7 +12,7 @@ class Recipe {
         this._type = type;
         this._id = id
         this._img = `img/${id}-card.jpg`;
-        this._link = `recipes/${id}.html`;
+        this._link = `recipe.html`;
         this._imgRecipe = `img/${id}-recipe.jpg`;
         this._favorite = favorite;
     }

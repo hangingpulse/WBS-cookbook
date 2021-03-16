@@ -26,7 +26,7 @@ $(document).ready(() => {
 
     currRecipeList = allRecipes
     fillCards();
-    $('#recipe').load('recipes/spag-bolognese.html');
+    $('#recipe').load('landingpage.html');
     $('.btn-all-recipes').addClass('btn-pasta-selected')
     document.querySelector('.welcome').addEventListener('click', welcomeImages);
     welcomeImages();

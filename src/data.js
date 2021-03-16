@@ -1,3 +1,10 @@
+const imageArray = ['pasta-la-vista1.jpg', 'pasta-la-vista.jpg', 'pasta-bilities.jpg', 'overdressed_pasta.jpg', 'pasta-types.png'];
+
+const shareButton = document.querySelector("share");
+
+
+ 
+ 
  // Recipe Class
 class Recipe {
     constructor(title, type, id, favorite=false) {

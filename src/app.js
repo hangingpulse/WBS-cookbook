@@ -3,6 +3,7 @@
 
 
 let currRecipeList = []
+let loadedRecipe
 
 // Creating new Cards and adding them to a list
 
@@ -37,7 +38,9 @@ $(document).ready(() => {
 
 $('.card-gallery').click((event) => {
     const cardIndex = $(event.target).parent().attr('name')
-    $('#recipe').load(currRecipeList._recipes[recipeCards[cardIndex]._currRecipe]._link)
+    loadedRecipe = currRecipeList._recipes[recipeCards[cardIndex]._currRecipe]
+    $('#recipe').load(loadedRecipe._link)
+    
 })
 
 

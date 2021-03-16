@@ -297,6 +297,42 @@ td {
   text-align: left;
 }
 
+
+/* RECIPE IMAGE HOVER EFFECT */
+
+.subtitle {
+  position: absolute;
+  transition: 1s;
+  font-weight: 600;
+  color: transparent;
+  top: 15rem;
+  font-size: 3rem;
+}
+
+.heading--title {
+  background-color: transparent;
+
+}
+
+.subtitle-wrapper {
+  display:flex;
+ }
+
+.subtitle-wrapper:hover .subtitle {
+  font-weight: 600;
+  color: #ea5e5e;
+  background-color: white;
+  border: 3px solid #1f6650;
+}
+
+.img-darken {
+transition: 1s;
+filter: brightness(50%);
+
+}
+
+
+
 /*Share button*/
 
 .social .fbtn {

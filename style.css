@@ -241,7 +241,6 @@ body {
 
 .img--recipe {
   width: 80vw;
-  height: 70vh;
   max-width: 1174px;
   border-radius: 20px;
   box-shadow: 3px 3px 3px #6f9a8d;
@@ -329,7 +328,11 @@ td {
 .img-darken {
 transition: 1s;
 filter: brightness(50%);
+}
 
+.img-brighten {
+  transition: 1s;
+  filter: brightness(100%);
 }
 
 
@@ -499,6 +502,14 @@ filter: brightness(50%);
   background-color: transparent;
 }
 
+#email::placeholder {
+  color:white;
+}
+
+.btn-newsletter {
+  background-color: #ea5e5e;
+}
+
 .d-flex {
   max-height: 3rem;
 }
@@ -508,7 +519,7 @@ filter: brightness(50%);
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .terms-conditions {

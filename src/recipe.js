@@ -29,10 +29,12 @@ $(document).ready(function() {
     const recipeItem = document.querySelector('.img--recipe');
     recipeItem.addEventListener('mouseover', () => {
         recipeItem.classList.add('img-darken');
+        recipeItem.classList.remove('img-brighten');
     })
 
     recipeItem.addEventListener('mouseout', () => {
         recipeItem.classList.remove('img-darken');
+        recipeItem.classList.add('img-brighten');
     })
 
 })
